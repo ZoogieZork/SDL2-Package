@@ -34,8 +34,6 @@ else
 	echo "--> Changelog up-to-date."
 fi
 
-exit 1
-
 echo "==> Building package."
 ( cd "$PROJECT" ; debuild -i -us -uc -b )
 
