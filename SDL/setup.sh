@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# setup.sh
+#   Modify the package info and build new packages for SDL.
+#   Copyright (C) 2013 Michael Imamura.
+#
+# Licensed under the terms of the MIT License.  See LICENSE.txt.
+
 DATADIR="$(dirname "$0")"
 PROJECT="$1"
 
