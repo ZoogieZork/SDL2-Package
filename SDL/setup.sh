@@ -4,7 +4,11 @@ DATADIR="$(dirname "$0")"
 PROJECT="$1"
 
 if [[ "$PROJECT" == "" ]]; then
-	echo "Usage: $0 projectdir"
+	echo "Usage: $0 projectdir" >&2
+	exit 1
+fi
+if [[ ! -d "$PROJECT" ]]; then
+	echo "Project is not a directory: $PROJECT" >&2
 	exit 1
 fi
 
