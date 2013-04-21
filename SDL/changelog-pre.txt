@@ -1,0 +1,6 @@
+libsdl2 (2.0.0~20130402-1) precise; urgency=low
+
+  * Repackaged for PPA
+
+ -- Michael Imamura <zoogie@lugatgt.org>  Sun, 21 Apr 2013 16:39:34 -0400
+
