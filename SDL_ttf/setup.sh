@@ -46,5 +46,5 @@ echo "--> $PATCHFILE"
 ( cd "$PROJECT" ; patch -tN -p1 ) < "$PATCHFILE"
 
 echo "==> Building package."
-( cd "$PROJECT" ; debuild -i -us -uc -b )
+( cd "$PROJECT" ; debuild -i -us -uc )
 
