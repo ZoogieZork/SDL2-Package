@@ -1,6 +1,7 @@
 /*.build
 /*.changes
 /*.deb
+/*.tar.bz2
 /*.tar.gz
 /SDL_ttf/
 
