@@ -1,0 +1,8 @@
+libsdl2-ttf (2.0.11+12~20130402-228-1) precise; urgency=low
+
+  * Repackaged for PPA.
+  * Changed libsdl2 dependency to allow snapshots.
+  * New upstream snapshot (2013-04-02, rev 228).
+
+ -- Michael Imamura <zoogie@lugatgt.org>  Mon, 22 Apr 2013 20:06:42 -0400
+
