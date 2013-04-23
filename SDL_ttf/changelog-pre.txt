@@ -1,4 +1,4 @@
-libsdl2-ttf (2.0.11+12~20130402-228-1) precise; urgency=low
+libsdl2-ttf (2.0.11+12~20130402-228-1ppa1) precise; urgency=low
 
   * Repackaged for PPA.
   * Changed libsdl2 dependency to allow snapshots.

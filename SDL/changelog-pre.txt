@@ -1,4 +1,4 @@
-libsdl2 (2.0.0~20130402-7046-1) precise; urgency=low
+libsdl2 (2.0.0~20130402-7046-1ppa1) precise; urgency=low
 
   * Repackaged for PPA.
   * New upstream snapshot (2013-04-02, rev 7046).
