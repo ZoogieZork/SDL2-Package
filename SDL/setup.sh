@@ -41,5 +41,5 @@ else
 fi
 
 echo "==> Building package."
-( cd "$PROJECT" ; debuild -i )
+( cd "$PROJECT" ; debuild -i -S )
 
