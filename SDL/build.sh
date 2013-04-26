@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# setup.sh
+# build.sh
 #   Modify the package info and build new packages for SDL.
 #   Copyright (C) 2013 Michael Imamura.
 #
