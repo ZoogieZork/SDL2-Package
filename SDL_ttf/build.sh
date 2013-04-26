@@ -9,7 +9,7 @@
 source "$(dirname "$0")/../functions.sh"
 
 DATADIR="$(dirname "$0")"
-PROJECT="$1"
+PROJECT="${1:-SDL_ttf}"
 
 verify_project "$PROJECT"
 prepend_changelog "$PROJECT" "$DATADIR"
