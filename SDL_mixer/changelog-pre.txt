@@ -1,0 +1,8 @@
+libsdl2-mixer (2.0.0~20130425-612-1ppa1) precise; urgency=low
+
+  * Repackaged for PPA.
+  * Changed libsdl2 dependency to allow snapshots.
+  * New upstream snapshot (2013-04-25, rev 612).
+
+ -- Michael Imamura <zoogie@lugatgt.org>  Thu, 25 Apr 2013 21:31:11 -0400
+
