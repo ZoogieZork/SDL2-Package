@@ -6,6 +6,23 @@
 #
 # Licensed under the terms of the MIT License.  See LICENSE.txt.
 
+function fetch_hg {
+	URL="$1"
+	PROJECT="$2"
+
+	if [[ -d "$PROJECT.orig" ]]; then
+		echo "==> Updating pristine snapshot: $PROJECT.orig"
+		( cd "$PROJECT.orig" ; hg pull ) || exit 1
+	else
+		echo "==> Cloning pristine snapshot: $PROJECT.orig"
+		hg clone "$URL" "$PROJECT.orig" || exit 1
+	fi
+
+	echo "==> Creating project copy: $PROJECT"
+	rm -rf "$PROJECT"
+	cp -r "$PROJECT.orig" "$PROJECT" || exit 1
+}
+
 function verify_project {
 	PROJECT="$1"
 
