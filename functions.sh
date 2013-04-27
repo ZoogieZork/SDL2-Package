@@ -7,7 +7,7 @@
 # Licensed under the terms of the MIT License.  See LICENSE.txt.
 
 function list_releases {
-	echo 'precise quantal raring'
+	echo 'precise quantal'
 }
 
 function fetch_hg {
