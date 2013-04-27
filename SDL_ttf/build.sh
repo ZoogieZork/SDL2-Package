@@ -12,7 +12,13 @@ DATADIR="$(dirname "$0")"
 PROJECT="${1:-SDL_ttf}"
 
 verify_project "$PROJECT"
-prepend_changelog "$PROJECT" "$DATADIR"
-apply_patches "$PROJECT" "$DATADIR/control.patch"
-build_source_pkg "$PROJECT"
+clean_pkgs "$PROJECT"
+for release in $(list_releases); do
+	echo "**> Building release: $release"
+	clean_project "$PROJECT"
+	prepend_changelog "$PROJECT" "$DATADIR" "$release"
+	apply_patches "$PROJECT" "$DATADIR/control.patch"
+	build_source_pkg "$PROJECT"
+done
+
 

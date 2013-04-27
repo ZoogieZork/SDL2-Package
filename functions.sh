@@ -6,6 +6,10 @@
 #
 # Licensed under the terms of the MIT License.  See LICENSE.txt.
 
+function list_releases {
+	echo 'precise quantal raring'
+}
+
 function fetch_hg {
 	URL="$1"
 	PROJECT="$2"
@@ -36,9 +40,17 @@ function verify_project {
 	fi
 }
 
+function _gen_changelog {
+	CLPRE="$1"
+	RELEASE="$2"
+
+	sed -e "s/@RELEASE@/$RELEASE/g" "$CLPRE"
+}
+
 function prepend_changelog {
 	PROJECT="$1"
 	DATADIR="$2"
+	RELEASE="$3"
 	
 	echo "==> Prepending changelog."
 	CLTARGET="$PROJECT/debian/changelog"
@@ -49,7 +61,7 @@ function prepend_changelog {
 		# Check if the changelog has already been modified.
 		lines=$(wc -l "$CLPRE" | cut -d ' ' -f 1)
 		targetmd5=$(head -n "$lines" "$CLTARGET" | md5sum | cut -d ' ' -f 1)
-		premd5=$(md5sum "$CLPRE" | cut -d ' ' -f 1)
+		premd5=$(_gen_changelog "$CLPRE" "$RELEASE" | md5sum | cut -d ' ' -f 1)
 		if [[ "$targetmd5" = "$premd5" ]]; then
 			needscl=0
 		fi
@@ -57,7 +69,8 @@ function prepend_changelog {
 	if [[ $needscl == 1 ]]; then
 		echo "--> Updating changelog from $CLPRE"
 		cp "$CLTARGET" "$CLDIST"
-		cat "$CLPRE" "$CLDIST" > "$CLTARGET"
+		_gen_changelog "$CLPRE" "$RELEASE" > "$CLTARGET"
+		cat "$CLDIST" >> "$CLTARGET"
 	else
 		echo "--> Changelog up-to-date."
 	fi

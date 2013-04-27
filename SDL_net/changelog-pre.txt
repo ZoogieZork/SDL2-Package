@@ -1,4 +1,4 @@
-libsdl2-net (2.0.0~20130425-228-1ppa2) precise; urgency=low
+libsdl2-net (2.0.0~20130425-228-1ppa2@RELEASE@1) @RELEASE@; urgency=low
 
   * Updated description to reflect that this is an unofficial package.
 
