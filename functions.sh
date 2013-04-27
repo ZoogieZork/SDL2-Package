@@ -88,3 +88,24 @@ function build_source_pkg {
 	( cd "$PROJECT" ; debuild -i -S )
 }
 
+function clean_pkgs {
+	PROJECT="$1"
+	PKGBASE="$PROJECT/../libsdl2"
+
+	echo "==> Removing previously-built packages."
+	rm -f \
+		"$PKGBASE"*.build \
+		"$PKGBASE"*.changes \
+		"$PKGBASE"*.deb \
+		"$PKGBASE"*.dsc \
+		"$PKGBASE"*.tar.gz \
+		"$PKGBASE"*.upload
+}
+
+function clean_project {
+	PROJECT="$1"
+
+	rm -rf "$PROJECT"
+	cp -r "$PROJECT.orig" "$PROJECT"
+}
+
