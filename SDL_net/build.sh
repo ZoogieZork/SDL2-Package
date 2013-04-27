@@ -13,6 +13,6 @@ PROJECT="${1:-SDL_net}"
 
 verify_project "$PROJECT"
 prepend_changelog "$PROJECT" "$DATADIR"
-apply_patches "$PROJECT" "$DATADIR/depends.patch"
+apply_patches "$PROJECT" "$DATADIR/control.patch"
 build_source_pkg "$PROJECT"
 

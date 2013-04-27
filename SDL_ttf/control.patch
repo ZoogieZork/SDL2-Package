@@ -1,0 +1,43 @@
+diff -urN SDL_ttf.orig/debian/control SDL_ttf/debian/control
+--- SDL_ttf.orig/debian/control	2013-04-23 19:57:22.191022168 -0400
++++ SDL_ttf/debian/control	2013-04-26 21:55:07.747379749 -0400
+@@ -1,14 +1,15 @@
+ Source: libsdl2-ttf
+ Section: libs
+ Priority: optional
+-Maintainer: Debian SDL packages maintainers <pkg-sdl-maintainers@lists.alioth.debian.org>
++Maintainer: Michael Imamura <zoogie@lugatgt.org>
+ Uploaders: Sam Hocevar (Debian packages) <sam+deb@zoy.org>,
+-           Sam Lantinga <slouken@libsdl.org>
++           Sam Lantinga <slouken@libsdl.org>,
++           Michael Imamura <zoogie@lugatgt.org>
+ Standards-Version: 3.9.2
+ Build-Depends: debhelper (>= 8.9.0~),
+                dh-autoreconf,
+                dpkg-dev (>= 1.16.1~),
+-               libsdl2-dev (>= 2.0.0),
++               libsdl2-dev (>= 2.0.0~),
+                libfreetype6-dev
+ Homepage: http://www.libsdl.org/projects/SDL_ttf/
+ 
+@@ -19,6 +20,8 @@
+ Depends: ${misc:Depends},
+          ${shlibs:Depends}
+ Description: TrueType font library for Simple DirectMedia Layer 2.0
++ *** Unofficial package from ppa:zoogie/sdl2-snapshots ***
++ .
+  This is a TrueType font library based on FreeType 2. It allows you to use
+  TrueType fonts in SDL applications.
+  .
+@@ -31,8 +34,10 @@
+ Depends: ${misc:Depends},
+          libsdl2-ttf (= ${binary:Version}),
+          libc6-dev,
+-         libsdl2-dev (>= 2.0.0)
++         libsdl2-dev (>= 2.0.0~)
+ Description: development files for SDL ttf library (version 2.0)
++ *** Unofficial package from ppa:zoogie/sdl2-snapshots ***
++ .
+  SDL_ttf is a sample TrueType font library. It allows you to use
+  TrueType fonts in SDL applications.
+  .

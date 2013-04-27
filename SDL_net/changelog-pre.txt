@@ -1,3 +1,9 @@
+libsdl2-net (2.0.0~20130425-228-1ppa2) precise; urgency=low
+
+  * Updated description to reflect that this is an unofficial package.
+
+ -- Michael Imamura <zoogie@lugatgt.org>  Fri, 26 Apr 2013 21:51:38 -0400
+
 libsdl2-net (2.0.0~20130425-228-1ppa1) precise; urgency=low
 
   * Repackaged for PPA.

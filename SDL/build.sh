@@ -13,5 +13,6 @@ PROJECT="$1"
 
 verify_project "$PROJECT"
 prepend_changelog "$PROJECT" "$DATADIR"
+apply_patches "$PROJECT" "$DATADIR/control.patch"
 build_source_pkg "$PROJECT"
 

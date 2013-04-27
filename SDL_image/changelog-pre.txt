@@ -1,3 +1,9 @@
+libsdl2-image (2.0.0~20130425-367-1ppa2) precise; urgency=low
+
+  * Updated description to reflect that this is an unofficial package.
+
+ -- Michael Imamura <zoogie@lugatgt.org>  Fri, 26 Apr 2013 21:23:03 -0400
+
 libsdl2-image (2.0.0~20130425-367-1ppa1) precise; urgency=low
 
   * Repackaged for PPA.
