@@ -1,3 +1,9 @@
+libsdl2 (2.0.0~20130428-7125-1ppa1@RELEASE@1) @RELEASE@; urgency=low
+
+  * New upstream snapshot (2013-04-28, rev 7125).
+
+ -- Michael Imamura <zoogie@lugatgt.org>  Sun, 28 Apr 2013 15:40:34 -0400
+
 libsdl2 (2.0.0~20130402-7046-1ppa2@RELEASE@2) @RELEASE@; urgency=low
 
   * Change libudev0 dependency to libudev1 for raring.

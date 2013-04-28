@@ -19,7 +19,7 @@ if [[ "$PROJECTDIR" = '' ]]; then
 fi
 
 echo "==> Extracting pristine copy: $PROJECTDIR.orig"
-rm -rf "$PROJECTDIR"
+rm -rf "$PROJECTDIR" "$PROJECTDIR.orig"
 tar xzf "$TARGETFILE" || exit 1
 mv "$PROJECTDIR" "$PROJECTDIR.orig" || exit 1
 
