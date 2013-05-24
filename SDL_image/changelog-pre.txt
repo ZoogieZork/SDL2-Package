@@ -1,3 +1,9 @@
+libsdl2-image (2.0.0~20130522-369-1ppa1@RELEASE@1) @RELEASE@; urgency=low
+
+  * New upstream snapshot (2013-05-22, rev 369).
+
+ -- Michael Imamura <zoogie@lugatgt.org>  Thu, 23 May 2013 22:17:15 -0400
+
 libsdl2-image (2.0.0~20130425-367-1ppa2@RELEASE@1) @RELEASE@; urgency=low
 
   * Updated description to reflect that this is an unofficial package.
