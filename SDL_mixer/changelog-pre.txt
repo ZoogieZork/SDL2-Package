@@ -1,3 +1,9 @@
+libsdl2-mixer (2.0.0~20130522-616-1ppa1@RELEASE@1) @RELEASE@; urgency=low
+
+  * New upstream snapshot (2013-05-22, rev 616).
+
+ -- Michael Imamura <zoogie@lugatgt.org>  Fri, 24 May 2013 20:26:20 -0400
+
 libsdl2-mixer (2.0.0~20130425-612-1ppa2@RELEASE@1) @RELEASE@; urgency=low
 
   * Updated description to reflect that this is an unofficial package.
