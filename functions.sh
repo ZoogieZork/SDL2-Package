@@ -16,7 +16,7 @@ function fetch_hg {
 
 	if [[ -d "$PROJECT.orig" ]]; then
 		echo "==> Updating pristine snapshot: $PROJECT.orig"
-		( cd "$PROJECT.orig" ; hg pull ) || exit 1
+		( cd "$PROJECT.orig" ; hg pull -u ) || exit 1
 	else
 		echo "==> Cloning pristine snapshot: $PROJECT.orig"
 		hg clone "$URL" "$PROJECT.orig" || exit 1
