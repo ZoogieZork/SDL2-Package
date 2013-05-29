@@ -7,10 +7,22 @@
 # Licensed under the terms of the MIT license.  See LICENSE.txt.
 
 TARGETFILE='SDL-2.0.tar.gz'
-URL='http://www.libsdl.org/tmp/SDL-2.0.tar.gz'
+INDEX_URL='http://www.libsdl.org/hg.php'
+DL_PREFIX='http://www.libsdl.org/tmp/'
+
+echo '==> Looking up latest snapshot'
+srcfile="$( curl "$INDEX_URL" | \
+	grep 'SDL 2[.]0 TGZ' | \
+	grep -o 'SDL-2[.]0[.]0-[0-9]*[.]tar[.]gz' | \
+	head -n 1 )"
+if [[ "$srcfile" = '' ]]; then
+	echo 'Unable to determine latest snapshot URL.' >&2
+	exit 1
+fi
+url="$DL_PREFIX$srcfile"
 
 echo "==> Downloading"
-wget -O "$TARGETFILE" "$URL" || exit 1
+wget -O "$TARGETFILE" "$url" || exit 1
 
 PROJECTDIR="$(tar tzf "$TARGETFILE" | head -1 | cut -d '/' -f 1)"
 if [[ "$PROJECTDIR" = '' ]]; then
