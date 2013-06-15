@@ -1,3 +1,11 @@
+libsdl2-mixer (2.0.0~20130611-642-1ppa1@RELEASE@1) @RELEASE@; urgency=low
+
+  * New upstream snapshot (2013-06-11, rev 642).
+    - Switched libmikmod dependency to libmodplug to match upstream.
+  * Fixed typo in "Uploaders" field.
+
+ -- Michael Imamura <zoogie@lugatgt.org>  Sat, 15 Jun 2013 00:24:58 -0400
+
 libsdl2-mixer (2.0.0~20130608-637-1ppa2@RELEASE@1) @RELEASE@; urgency=low
 
   * Fix build failure due to README being renamed to README.txt.

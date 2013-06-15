@@ -94,6 +94,13 @@ function apply_patches {
 	done
 }
 
+function build_binary_pkg {
+	PROJECT="$1"
+
+	echo "==> Building binary package."
+	( cd "$PROJECT" ; debuild -i -b )
+}
+
 function build_source_pkg {
 	PROJECT="$1"
 
