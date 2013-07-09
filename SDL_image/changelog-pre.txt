@@ -1,3 +1,10 @@
+libsdl2-image (2.0.0~20130707-413-1ppa1@RELEASE@1) @RELEASE@; urgency=low
+
+  * New upstream snapshot (2013-07-07, rev 413).
+  * docs.patch: Remove (fixed upstream).
+
+ -- Michael Imamura <zoogie@lugatgt.org>  Mon, 08 Jul 2013 22:12:57 -0400
+
 libsdl2-image (2.0.0~20130607-402-1ppa1@RELEASE@1) @RELEASE@; urgency=low
 
   * New upstream snapshot (2013-06-07, rev 402).

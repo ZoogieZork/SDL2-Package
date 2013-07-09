@@ -17,7 +17,7 @@ for release in $(list_releases); do
 	echo "**> Building release: $release"
 	clean_project "$PROJECT"
 	prepend_changelog "$PROJECT" "$DATADIR" "$release"
-	apply_patches "$PROJECT" "$DATADIR/control.patch" "$DATADIR/docs.patch"
+	apply_patches "$PROJECT" "$DATADIR/control.patch"
 	build_source_pkg "$PROJECT"
 done
 
