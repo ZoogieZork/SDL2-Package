@@ -1,6 +1,7 @@
 libsdl2-mixer (2.0.0~20130808-656-1ppa2@RELEASE@1) @RELEASE@; urgency=low
 
   * Rebuild the correct revision this time (missed the fetch failure).
+  * docs.patch: Remove (fixed upstream).
 
  -- Michael Imamura <zoogie@lugatgt.org>  Thu, 08 Aug 2013 20:21:45 -0400
 
