@@ -1,6 +1,0 @@
-diff -urN orig/debian/docs new/debian/docs
---- orig/debian/docs	2013-04-25 22:24:19.207787062 -0400
-+++ new/debian/docs	2013-06-07 20:48:08.009530895 -0400
-@@ -1 +1 @@
--README
-+README.txt

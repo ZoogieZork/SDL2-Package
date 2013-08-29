@@ -1,3 +1,9 @@
+libsdl2-mixer (2.0.0+1~20130824-659-1ppa1@RELEASE@1) @RELEASE@; urgency=low
+
+  * New upstream snapshot (2013-08-24, rev 659).
+
+ -- Michael Imamura <zoogie@lugatgt.org>  Thu, 29 Aug 2013 13:07:32 -0400
+
 libsdl2-mixer (2.0.0~20130808-656-1ppa2@RELEASE@1) @RELEASE@; urgency=low
 
   * Rebuild the correct revision this time (missed the fetch failure).
