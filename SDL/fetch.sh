@@ -13,7 +13,7 @@ DL_PREFIX='http://www.libsdl.org/tmp/'
 echo '==> Looking up latest snapshot'
 srcfile="$( curl "$INDEX_URL" | \
 	grep 'SDL 2[.]0 TGZ' | \
-	grep -o 'SDL-2[.]0[.]0-[0-9]*[.]tar[.]gz' | \
+	grep -o 'SDL-2[.]0[.]1-[0-9]*[.]tar[.]gz' | \
 	head -n 1 )"
 if [[ "$srcfile" = '' ]]; then
 	echo 'Unable to determine latest snapshot URL.' >&2
