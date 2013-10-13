@@ -1,3 +1,9 @@
+libsdl2-net (2.0.0+1~20130927-253-1ppa1@RELEASE@1) @RELEASE@; urgency=low
+
+  * Repackaged with bumped version number; no other changes.
+
+ -- Michael Imamura <zoogie@lugatgt.org>  Sun, 13 Oct 2013 12:41:56 -0400
+
 libsdl2-net (2.0.0~20130927-253-1ppa1@RELEASE@1) @RELEASE@; urgency=low
 
   * New upstream snapshot (2013-09-27, rev 253).
