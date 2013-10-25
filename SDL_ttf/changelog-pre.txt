@@ -1,3 +1,9 @@
+libsdl2-ttf (2.0.12+13~20131023-259-1ppa1@RELEASE@1) @RELEASE@; urgency=low
+
+  * New upstream snapshot (2013-10-23, rev 259).
+
+ -- Michael Imamura <zoogie@lugatgt.org>  Thu, 24 Oct 2013 21:39:22 -0400
+
 libsdl2-ttf (2.0.12+13~20130905-257-1ppa1@RELEASE@1) @RELEASE@; urgency=low
 
   * New upstream snapshot (2013-09-05, rev 257).
