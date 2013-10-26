@@ -1,3 +1,9 @@
+libsdl2 (2.0.1+2~20131024-7893-1ppa1@RELEASE@2) @RELEASE@; urgency=low
+
+  * Re-upload to workaround Launchpad build issue; no changes.
+
+ -- Michael Imamura <zoogie@lugatgt.org>  Sat, 26 Oct 2013 15:42:02 -0400
+
 libsdl2 (2.0.1+2~20131024-7893-1ppa1@RELEASE@1) @RELEASE@; urgency=low
 
   * New upstream snapshot (2013-10-24, rev 7893).
