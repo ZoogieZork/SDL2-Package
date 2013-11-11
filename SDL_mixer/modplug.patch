@@ -1,0 +1,24 @@
+diff -urN SDL_mixer.orig/dynamic_modplug.h SDL_mixer/dynamic_modplug.h
+--- SDL_mixer.orig/dynamic_modplug.h	2013-06-15 00:24:04.580979129 -0400
++++ SDL_mixer/dynamic_modplug.h	2013-11-10 19:29:36.982172626 -0500
+@@ -21,7 +21,7 @@
+ 
+ #ifdef MODPLUG_MUSIC
+ 
+-#include "modplug.h"
++#include "libmodplug/modplug.h"
+ 
+ typedef struct {
+     int loaded;
+diff -urN SDL_mixer.orig/music_modplug.h SDL_mixer/music_modplug.h
+--- SDL_mixer.orig/music_modplug.h	2013-06-15 00:24:04.624982619 -0400
++++ SDL_mixer/music_modplug.h	2013-11-10 19:28:47.178172263 -0500
+@@ -21,7 +21,7 @@
+ 
+ #ifdef MODPLUG_MUSIC
+ 
+-#include "modplug.h"
++#include "libmodplug/modplug.h"
+ #include "SDL_rwops.h"
+ #include "SDL_audio.h"
+ #include "SDL_mixer.h"
