@@ -1,3 +1,9 @@
+libsdl2 (2.0.1+2~20131127-8033-1ppa1@RELEASE@1) @RELEASE@; urgency=low
+
+  * New upstream snapshot (2013-11-27, rev 8033).
+
+ -- Michael Imamura <zoogie@lugatgt.org>  Wed, 27 Nov 2013 17:26:53 -0500
+
 libsdl2 (2.0.1+2~20131110-7943-1ppa1@RELEASE@1) @RELEASE@; urgency=low
 
   * New upstream snapshot (2013-11-10, rev 7943).
