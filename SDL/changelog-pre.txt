@@ -1,3 +1,10 @@
+libsdl2 (2.0.2+3~20140308-8297-1ppa1@RELEASE@1) @RELEASE@; urgency=low
+
+  * New upstream snapshot (2014-03-08, rev 8297).
+  * Bump version for official 2.0.2 release.
+
+ -- Michael Imamura <zoogie@lugatgt.org>  Sat, 08 Mar 2014 18:16:17 -0500
+
 libsdl2 (2.0.1+2~20140307-8296-1ppa1@RELEASE@1) @RELEASE@; urgency=low
 
   * New upstream snapshot (2014-03-07, rev 8296).
