@@ -7,7 +7,7 @@
 # Licensed under the terms of the MIT License.  See LICENSE.txt.
 
 function list_releases {
-	echo 'saucy'
+	echo 'saucy trusty'
 }
 
 function fetch_hg {
