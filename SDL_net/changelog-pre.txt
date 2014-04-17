@@ -1,3 +1,10 @@
+libsdl2-net (2.0.0+z1~20131023-254-1ppa1@RELEASE@2) @RELEASE@; urgency=low
+
+  * Tweak the version number to sort after the Debian versions
+    (no other changes).
+
+ -- Michael Imamura <zoogie@lugatgt.org>  Thu, 17 Apr 2014 10:02:56 -0400
+
 libsdl2-net (2.0.0+1~20131023-254-1ppa1@RELEASE@2) @RELEASE@; urgency=low
 
   * Re-upload to workaround Launchpad build issue; no changes.
